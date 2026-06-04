@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNBOUND '26 | FOSS Club PU Online Hackathon</title>
+    <meta name="description" content="UNBOUND '26 - The first edition online hackathon presented by FOSS Club PU. 2 weeks of open innovation, building open-source software, with exciting prizes and certificates.">
+    <meta name="keywords" content="UNBOUND 26, FOSS Club PU, Pondicherry University, online hackathon, open innovation, open source, coding competition, college students">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UNBOUND '26 | FOSS Club PU Online Hackathon">
+    <meta property="og:description" content="Join the first edition online hackathon by FOSS Club PU. 2 weeks, Open Innovation, FOSS guidelines, exciting prizes, and certificates.">
+    <meta property="og:image" content="assets/logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="UNBOUND '26 | FOSS Club PU Online Hackathon">
+    <meta property="twitter:description" content="Join the first edition online hackathon by FOSS Club PU. 2 weeks, Open Innovation, FOSS guidelines, exciting prizes, and certificates.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Symmetrical Neoclassical Outer Border / Grid Frame -->
+    <div class="neo-frame-top"></div>
+    <div class="neo-frame-left"></div>
+    <div class="neo-frame-right"></div>
+    <div class="neo-frame-bottom"></div>
+
+    <header class="header">
+        <div class="header-container container">
+            <div class="header-logo">
+                <img src="assets/logo.png" alt="FOSS Club Pondicherry University Logo" id="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">FOSS CLUB PU</span>
+                    <span class="logo-subtitle">Pondicherry University</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#details" class="nav-link">Details</a>
+                <a href="#rules" class="nav-link">Statutes</a>
+                <a href="#checklist" class="nav-link">Checklist</a>
+                <a href="#planner" class="nav-link">Planner</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#planner" class="btn btn-outline">Plan Team</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section container">
+            <div class="hero-eyebrow">
+                <span>PRESENTED BY FOSS CLUB PONDICHERRY UNIVERSITY</span>
+            </div>
+            <h1 class="hero-title">UNBOUND '26</h1>
+            <p class="hero-subtitle">First Edition Online Hackathon</p>
+            
+            <div class="hero-divider">
+                <span class="divider-ornament">✦</span>
+            </div>
+
+            <p class="hero-description">
+                A two-week digital sanctuary for developers, designers, and open-source visionaries. 
+                Break free from constraints, build with integrity, and shape the future under the banner of <strong>Open Innovation</strong>.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#planner" class="btn btn-primary">Begin Registration</a>
+                <a href="#rules" class="btn btn-secondary">Read Statutes</a>
+            </div>
+
+            <!-- COUNTDOWN CLOCK -->
+            <div class="countdown-wrapper">
+                <h3 class="countdown-title">COUNTDOWN TO KICKOFF</h3>
+                <div class="countdown-clock" id="countdown-clock">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">HOURS</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">MINUTES</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">SECONDS</span>
+                    </div>
+                </div>
+                <p class="countdown-date">KICKOFF DATE: JUNE 12, 2026</p>
+            </div>
+        </section>
+
+        <!-- CORE DETAILS / QUICK METRICS -->
+        <section id="details" class="details-section container">
+            <div class="section-header-block">
+                <h2 class="section-title">THE CORE STATS</h2>
+                <p class="section-subtitle">Important parameters of the competition</p>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">✦</div>
+                    <h3 class="detail-label">TRACK</h3>
+                    <p class="detail-value">Open Innovation</p>
+                    <p class="detail-description">Build anything that solves a real problem using open technology.</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">✦</div>
+                    <h3 class="detail-label">FORMAT</h3>
+                    <p class="detail-value">100% Online</p>
+                    <p class="detail-description">Collaborate from anywhere. Submissions and judging are virtual.</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">✦</div>
+                    <h3 class="detail-label">DURATION</h3>
+                    <p class="detail-value">2 Weeks</p>
+                    <p class="detail-description">A marathon, not a sprint. Plenty of time to refine your codebase.</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">✦</div>
+                    <h3 class="detail-label">ELIGIBILITY</h3>
+                    <p class="detail-value">All College Students</p>
+                    <p class="detail-description">Undergraduates & postgraduates from any stream or institution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE & PRIZES -->
+        <section id="about" class="timeline-prizes-section container">
+            <div class="neo-row">
+                <!-- TIMELINE COLUMN -->
+                <div class="neo-col timeline-col">
+                    <h2 class="column-title">THE TIMELINE</h2>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-badge">12 JUN</div>
+                            <div class="timeline-content">
+                                <h4>Hackathon Kickoff</h4>
+                                <p>June 12, 2026 — Prompt announcements and repository activation. Official coding starts!</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-badge">19 JUN</div>
+                            <div class="timeline-content">
+                                <h4>Mid-way Milestone Check</h4>
+                                <p>June 19, 2026 — Self-check your commits and ensure license parameters are in place.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-badge">26 JUN</div>
+                            <div class="timeline-content">
+                                <h4>Submissions Close</h4>
+                                <p>June 26, 2026 (11:59 PM IST) — Final project push, video submission, and README finalization.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-badge">30 JUN</div>
+                            <div class="timeline-content">
+                                <h4>Results Announcement</h4>
+                                <p>June 30, 2026 — Final placements, jury presentations, and certificates distribution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRIZES COLUMN -->
+                <div class="neo-col prizes-col">
+                    <h2 class="column-title">PRIZES & CERTIFICATES</h2>
+                    <div class="prizes-hero">
+                        <div class="prize-seal">
+                            <span>FOSS</span>
+                            <span>SEAL</span>
+                        </div>
+                        <h3>Exciting Prizes + Certificates</h3>
+                        <p>All teams that submit a valid, compliant, and license-approved FOSS project will receive official participation certificates from FOSS CLUB PU.</p>
+                        
+                        <div class="prizes-divider"></div>
+                        
+                        <ul class="prizes-list">
+                            <li>
+                                <span class="prize-rank">Winner</span>
+                                <span class="prize-details">Cash prize + custom FOSS Club merchandise + certificate of excellence.</span>
+                            </li>
+                            <li>
+                                <span class="prize-rank">Runner Up</span>
+                                <span class="prize-details">Cash prize + FOSS Club merchandise + certificate of excellence.</span>
+                            </li>
+                            <li>
+                                <span class="prize-rank">Best FOSS Design</span>
+                                <span class="prize-details">Special award recognizing strict adherence to FOSS ideals, clean code, and solid documentation.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES / STATUTES -->
+        <section id="rules" class="rules-section container">
+            <div class="section-header-block">
+                <h2 class="section-title">THE CONSTITUTION OF UNBOUND</h2>
+                <p class="section-subtitle">Rules governing the hackathon. Strict compliance is required.</p>
+            </div>
+
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE I</div>
+                    <h3>Eligibility & Teams</h3>
+                    <p>Strictly open to current college students (UG/PG). Teams of 1 to 4 members. Cross-college teams are permitted. A participant can only join one team.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE II</div>
+                    <h3>Open Source Mandate</h3>
+                    <p>Every project repository must contain an OSI-approved license (e.g. MIT, Apache 2.0, GPL v3) in a root <code>LICENSE</code> file. No license means no evaluation.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE III</div>
+                    <h3>No Proprietary Lock-in</h3>
+                    <p>The core functionality must not depend heavily on paid, closed-source third-party software or proprietary APIs. Open-source libraries and APIs are highly encouraged.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE IV</div>
+                    <h3>Timeline & Integrity</h3>
+                    <p>All core development must happen exclusively between June 12 and June 26, 2026. Pre-built projects are strictly prohibited. Extensions must only evaluate commits in this window.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE V</div>
+                    <h3>Commit History</h3>
+                    <p>Teams must maintain a clear, active Git history showing progression. Last-minute "ghost pushes" of massive codeblocks without history are grounds for disqualification.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-num">ARTICLE VI</div>
+                    <h3>Plagiarism & Attribution</h3>
+                    <p>Code duplication without proper attribution will result in an immediate ban. If utilizing LLMs to generate sections of code, you must include clear attributions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SUBMISSIONS -->
+        <section class="submissions-section container">
+            <h2 class="section-title text-center">THE FINISH LINE</h2>
+            <p class="section-subtitle text-center">To successfully qualify for evaluation, you must submit the following before June 26:</p>
+            
+            <div class="deliverables-container">
+                <div class="deliverable-step">
+                    <div class="step-circle">1</div>
+                    <div class="step-body">
+                        <h3>Public Repository</h3>
+                        <p>A public Git repository hosted on <strong>GitHub</strong>, <strong>GitLab</strong>, or <strong>Codeberg</strong>, showing active development history.</p>
+                    </div>
+                </div>
+                <div class="deliverable-step">
+                    <div class="step-circle">2</div>
+                    <div class="step-body">
+                        <h3>Production README</h3>
+                        <p>A comprehensive <code>README.md</code> explaining the problem, the solution, the tech stack, setup instructions, and local testing guidelines for the jury.</p>
+                    </div>
+                </div>
+                <div class="deliverable-step">
+                    <div class="step-circle">3</div>
+                    <div class="step-body">
+                        <h3>5-Minute Demo Video</h3>
+                        <p>A focused video demonstrating working features (no theoretical slide decks). Uploaded to YouTube (public/unlisted) or Google Drive (public access).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC CHECKLIST SECTION -->
+        <section id="checklist" class="checklist-section container">
+            <div class="checklist-wrapper">
+                <div class="checklist-header">
+                    <h2>PROJECT READINESS CHECKLIST</h2>
+                    <p>Use this interactive tool to track your team's compliance with the UNBOUND '26 statutes before submit day.</p>
+                </div>
+                <div class="checklist-items">
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-eligibility">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>Team Compliance:</strong> All members are active college students, registered in only one team, and team size is 1 to 4 members.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-license">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>OSI Approved License:</strong> A valid LICENSE file (MIT, Apache 2.0, GPL, etc.) is pushed in the root of the project repository.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-dependencies">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>FOSS Dependencies:</strong> Core functionality does not rely on proprietary/paid APIs or closed-source software.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-commits">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>Git Progression:</strong> Day-to-day commit logs are maintained. No single giant code dump planned.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-attribution">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>Attributions & Plagiarism check:</strong> All external code, libraries, and LLM usage are clearly credited in the documentation.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-readme">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>README.md Setup:</strong> Setup guides, setup commands, tech stack, and clear testing steps for the jury are fully written.
+                        </span>
+                    </label>
+                    <label class="checklist-item-row">
+                        <input type="checkbox" id="check-video">
+                        <span class="custom-checkbox"></span>
+                        <span class="check-text">
+                            <strong>Working Demo Video:</strong> A 5-minute video focusing strictly on the working prototype features is recorded and uploaded.
+                        </span>
+                    </label>
+                </div>
+                <div class="checklist-status">
+                    <div class="status-bar-bg">
+                        <div class="status-bar-fill" id="checklist-progress"></div>
+                    </div>
+                    <p class="status-text"><span id="checklist-count">0</span> of 7 tasks complete (<span id="checklist-pct">0%</span> ready)</p>
+                    <div class="status-verdict" id="status-verdict">PROJECT NOT YET COMPLIANT</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM BUILDER & REGISTRATION PLANNER -->
+        <section id="planner" class="planner-section container">
+            <div class="planner-wrapper">
+                <div class="planner-header">
+                    <h2>TEAM REGISTRATION PLANNER</h2>
+                    <p>Draft your team structure, validate compliance, and generate a formatted registration ticket to prepare for registration.</p>
+                </div>
+                
+                <form id="registration-planner-form" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="team-name">Team Name <span class="required">*</span></label>
+                            <input type="text" id="team-name" placeholder="e.g., The Antigravity Coders" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-license">Target Open Source License <span class="required">*</span></label>
+                            <select id="project-license" required>
+                                <option value="" disabled selected>Select an OSI-approved license</option>
+                                <option value="MIT">MIT License</option>
+                                <option value="Apache-2.0">Apache License 2.0</option>
+                                <option value="GPL-3.0">GNU GPL v3</option>
+                                <option value="BSD-3-Clause">BSD 3-Clause "New" or "Revised" License</option>
+                                <option value="AGPL-3.0">GNU Affero GPL v3</option>
+                                <option value="MPL-2.0">Mozilla Public License 2.0</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-description">Project Concept Idea (Optional)</label>
+                        <textarea id="project-description" rows="3" placeholder="Briefly describe what problem you plan to address..."></textarea>
+                    </div>
+
+                    <div class="members-section">
+                        <h3>Team Members (1 to 4 Members)</h3>
+                        <p class="form-tip">The first member is designated as the Team Leader. All fields are required for added members.</p>
+                        
+                        <div id="members-container">
+                            <!-- Member 1 (Leader) -->
+                            <div class="member-entry" data-member-index="1">
+                                <div class="member-header">
+                                    <span class="member-number">#1: Team Leader</span>
+                                </div>
+                                <div class="member-fields">
+                                    <div class="field-item">
+                                        <input type="text" class="m-name" placeholder="Full Name" required>
+                                    </div>
+                                    <div class="field-item">
+                                        <input type="email" class="m-email" placeholder="Email Address" required>
+                                    </div>
+                                    <div class="field-item">
+                                        <input type="text" class="m-college" placeholder="College / Institution" required>
+                                    </div>
+                                    <div class="field-item">
+                                        <input type="text" class="m-github" placeholder="GitHub Username (e.g., octocat)" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="members-buttons">
+                            <button type="button" id="add-member-btn" class="btn btn-small btn-outline">+ Add Team Member</button>
+                        </div>
+                    </div>
+
+                    <div class="planner-actions">
+                        <button type="submit" id="generate-ticket-btn" class="btn btn-primary">Generate Registration Ticket</button>
+                        <button type="button" id="reset-planner-btn" class="btn btn-secondary">Reset Form</button>
+                    </div>
+                </form>
+
+                <!-- Ticket Output Display -->
+                <div class="ticket-output-container hidden" id="ticket-output-container">
+                    <div class="ticket-header-symmetrical">
+                        <span>UNBOUND '26 OFFICIAL PLANNER REGISTRATION TICKET</span>
+                    </div>
+                    <div class="ticket-body" id="ticket-body">
+                        <!-- Dynamic ticket output goes here -->
+                    </div>
+                    <div class="ticket-actions">
+                        <button type="button" id="copy-markdown-btn" class="btn btn-primary">Copy Ticket Markdown</button>
+                        <button type="button" id="download-ticket-btn" class="btn btn-secondary">Download Ticket Text</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCORDIONS (JUDGING CRITERIA & CODE OF CONDUCT) -->
+        <section id="faq" class="faq-section container">
+            <div class="section-header-block">
+                <h2 class="section-title">JUDGING & CONDUCT</h2>
+                <p class="section-subtitle">Read how submissions will be scrutinized and how we maintain academic rigor</p>
+            </div>
+
+            <div class="accordions-container">
+                <!-- Accordion 1 -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>JUDGING CRITERIA</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="panel-content">
+                            <p>Our judging panel reviews codebases carefully using the following parameters:</p>
+                            <ul>
+                                <li><strong>Meaningful Problem:</strong> How well defined is the problem you chose to solve? We look for a clear description of the problem statement and its significance in your README.</li>
+                                <li><strong>Codebase Understanding:</strong> During our evaluation, you will be expected to demonstrate a deep understanding of your codebase. Be ready to explain architecture, data flows, and code snippets.</li>
+                                <li><strong>License Integrity:</strong> Immediate disqualification for missing root LICENSE files or non-OSI approved licenses.</li>
+                                <li><strong>Open Source Best Practices:</strong> Clean Git logs showing collaborative history, structured files, and zero lock-in to proprietary, closed technologies.</li>
+                                <li><strong>LLM Attributions:</strong> Using tools to assist coding is fine, but clear attributions pointing to what code was AI-assisted must be included.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 2 -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>CODE OF CONDUCT & RESOLUTIONS</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="panel-content">
+                            <p>FOSS Club Pondicherry University stands for inclusivity, collaboration, and ethical engineering:</p>
+                            <ul>
+                                <li><strong>Respect & Inclusivity:</strong> All interactions on the official Discord server must remain professional, helpful, and friendly. Harassment, derogatory remarks, or hate speech will trigger immediate expulsion from the competition.</li>
+                                <li><strong>Academic Integrity:</strong> Plagiarism will result in an immediate, unappealing ban from all future FOSS Club PU hackathons. Do not copy repositories without attribution.</li>
+                                <li><strong>Absolute Authority:</strong> The decisions made by the FOSS CLUB PU organizing committee and the external judging panel regarding evaluations, compliance audits, disqualifications, and final placements are absolute and final.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accordion 3 -->
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>FREQUENTLY ASKED QUESTIONS</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-panel">
+                        <div class="panel-content">
+                            <p>Common queries about the hackathon:</p>
+                            <ul>
+                                <li><strong>Is there a registration fee?</strong> No, UNBOUND '26 is completely free and open to all college students.</li>
+                                <li><strong>Can we form cross-college teams?</strong> Yes, members of a team can be from different departments, streams, or different colleges entirely.</li>
+                                <li><strong>What counts as a "Proprietary Dependency"?</strong> For example, using paid APIs (like OpenAI paid tiers without a local fallback, Google Maps paid SDKs) as a core function without open alternatives. Try to use open models (Hugging Face, self-hosted LLMs) or open-source database libraries (SQLite, PostgreSQL).</li>
+                                <li><strong>Are we allowed to use frameworks?</strong> Absolutely. You can use React, Vue, Next.js, Django, Flutter, Rust, etc., as long as your code is open-sourced under an OSI license and written during the hackathon window.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>UNBOUND '26</h3>
+                    <p>Presented by FOSS CLUB PU</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">Discord</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="mailto:fossclubpu@gmail.com" class="social-link">Email</a>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 FOSS CLUB PU. Pondicherry University. Built in the spirit of Free and Open Source Software.</p>
+                <p class="footer-license">This website is open-source and licensed under the MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript script file -->
+    <script src="app.js"></script>
+</body>
+</html>
