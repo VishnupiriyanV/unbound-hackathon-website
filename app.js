@@ -5,6 +5,42 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------
+    // 0. THEME MANAGEMENT (DARK / LIGHT MODE)
+    // -------------------------------------------------------------
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    // Check saved preference, defaulting strictly to dark mode
+    const savedTheme = localStorage.getItem('unbound_theme');
+    const initialTheme = savedTheme || 'dark';
+
+    // Initialize theme
+    setTheme(initialTheme);
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+    }
+
+    function setTheme(theme) {
+        htmlElement.setAttribute('data-theme', theme);
+        localStorage.setItem('unbound_theme', theme);
+        
+        if (themeToggleBtn) {
+            if (theme === 'dark') {
+                themeToggleBtn.textContent = '☀';
+                themeToggleBtn.setAttribute('title', 'Switch to Light Theme');
+            } else {
+                themeToggleBtn.textContent = '☾';
+                themeToggleBtn.setAttribute('title', 'Switch to Dark Theme');
+            }
+        }
+    }
+
+    // -------------------------------------------------------------
     // 1. COUNTDOWN TIMER
     // -------------------------------------------------------------
     const targetKickoff = new Date('June 12, 2026 00:00:00 GMT+0530').getTime();
