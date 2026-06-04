@@ -1185,14 +1185,57 @@ img {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --space-md: 1.5rem;
+        --space-lg: 2.5rem;
+        --space-xl: 3.5rem;
+    }
+    body {
+        padding: 0.5rem 0;
+    }
+    .neo-frame-top, .neo-frame-bottom, .neo-frame-left, .neo-frame-right {
+        display: none;
+    }
+    .header {
+        top: 0;
+    }
     .header-container {
-        flex-direction: column;
-        gap: var(--space-sm);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 0.5rem 1rem;
+        padding: 0 var(--space-sm);
+    }
+    .header-logo {
+        justify-content: flex-start;
+    }
+    .theme-logo {
+        height: 40px;
+    }
+    .header-cta {
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+    .header-cta .btn {
+        width: auto;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+    }
+    .header-cta .btn-theme-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 1rem;
     }
     .nav {
+        grid-column: 1 / span 2;
         flex-wrap: wrap;
         justify-content: center;
-        gap: var(--space-sm);
+        gap: 0.4rem 0.8rem;
+    }
+    .nav-link {
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
     }
     .hero-title {
         font-size: 2.75rem;
@@ -1250,13 +1293,56 @@ img {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
     .countdown-clock {
         flex-wrap: wrap;
     }
     .countdown-divider {
         display: none;
+    }
+    .nav {
+        gap: 0.5rem 0.75rem;
+    }
+    .nav-link {
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+    }
+    .sponsorship-wrapper {
+        padding: 1.75rem 1rem;
+    }
+    .sponsorship-title {
+        font-size: 1.5rem;
+    }
+    .sponsorship-subtitle {
+        font-size: 1.05rem;
+    }
+    .sponsorship-content-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+    .sponsorship-benefit {
+        padding: var(--space-sm);
+    }
+    .checklist-wrapper {
+        padding: 1.75rem 1rem;
+    }
+    .checklist-header h2 {
+        font-size: 1.25rem;
+    }
+    .checklist-item-row {
+        padding: 0.75rem 0.5rem;
+    }
+    .check-text {
+        font-size: 0.85rem;
+    }
+    .accordion-header {
+        padding: 1rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    .panel-content {
+        padding: 0 0.75rem 1rem;
+        font-size: 0.85rem;
     }
 }
 
