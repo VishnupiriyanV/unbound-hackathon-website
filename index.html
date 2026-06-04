@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- Symmetrical Neoclassical Outer Border / Grid Frame -->
@@ -36,23 +36,20 @@
     <header class="header">
         <div class="header-container container">
             <div class="header-logo">
-                <img src="assets/logo.png" alt="FOSS Club Pondicherry University Logo" id="logo-img">
-                <div class="logo-text">
-                    <span class="logo-title">FOSS CLUB PU</span>
-                    <span class="logo-subtitle">Pondicherry University</span>
-                </div>
+                <img src="assets/logo-dark.png" alt="FOSS Club Pondicherry University Logo" id="logo-img-dark" class="theme-logo dark-logo">
+                <img src="assets/logo-light.png" alt="FOSS Club Pondicherry University Logo" id="logo-img-light" class="theme-logo light-logo">
             </div>
             <nav class="nav">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#details" class="nav-link">Details</a>
                 <a href="#rules" class="nav-link">Statutes</a>
                 <a href="#checklist" class="nav-link">Checklist</a>
-                <a href="#planner" class="nav-link">Planner</a>
+                <a href="#sponsorship" class="nav-link">Sponsorship</a>
                 <a href="#faq" class="nav-link">FAQs</a>
             </nav>
             <div class="header-cta">
                 <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">☾</button>
-                <a href="#planner" class="btn btn-outline">Plan Team</a>
+                <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="btn btn-outline">Apply Now</a>
             </div>
         </div>
     </header>
@@ -76,7 +73,7 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#planner" class="btn btn-primary">Begin Registration</a>
+                <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="btn btn-primary">Apply Now</a>
                 <a href="#rules" class="btn btn-secondary">Read Statutes</a>
             </div>
 
@@ -105,6 +102,15 @@
                     </div>
                 </div>
                 <p class="countdown-date">KICKOFF DATE: JUNE 12, 2026</p>
+            </div>
+
+            <!-- WHATSAPP HIGHLIGHT -->
+            <div class="whatsapp-banner">
+                <span class="whatsapp-banner-title">COMMUNICATION</span>
+                <p class="whatsapp-banner-text">
+                    For real-time announcements & query resolution, join the official 
+                    <a href="https://chat.whatsapp.com/CeEHgY0659aD6e5H1TmtMr?mode=gi_t" target="_blank" class="whatsapp-banner-link">UNBOUND '26 WhatsApp Group ➔</a>
+                </p>
             </div>
         </section>
 
@@ -172,10 +178,10 @@
                             </div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-badge">30 JUN</div>
+                            <div class="timeline-badge">JULY</div>
                             <div class="timeline-content">
                                 <h4>Results Announcement</h4>
-                                <p>June 30, 2026 — Final placements, jury presentations, and certificates distribution.</p>
+                                <p>July 2026 — Final placements, compliance audits, and certificates distribution.</p>
                             </div>
                         </div>
                     </div>
@@ -185,29 +191,19 @@
                 <div class="neo-col prizes-col">
                     <h2 class="column-title">PRIZES & CERTIFICATES</h2>
                     <div class="prizes-hero">
-                        <div class="prize-seal">
-                            <span>FOSS</span>
-                            <span>SEAL</span>
-                        </div>
                         <h3>Exciting Prizes + Certificates</h3>
                         <p>All teams that submit a valid, compliant, and license-approved FOSS project will receive official participation certificates from FOSS CLUB PU.</p>
                         
                         <div class="prizes-divider"></div>
                         
-                        <ul class="prizes-list">
-                            <li>
-                                <span class="prize-rank">Winner</span>
-                                <span class="prize-details">Cash prize + custom FOSS Club merchandise + certificate of excellence.</span>
-                            </li>
-                            <li>
-                                <span class="prize-rank">Runner Up</span>
-                                <span class="prize-details">Cash prize + FOSS Club merchandise + certificate of excellence.</span>
-                            </li>
-                            <li>
-                                <span class="prize-rank">Best FOSS Design</span>
-                                <span class="prize-details">Special award recognizing strict adherence to FOSS ideals, clean code, and solid documentation.</span>
-                            </li>
-                        </ul>
+                        <div class="prizes-text-block" style="text-align: left; width: 100%;">
+                            <p style="font-family: var(--font-serif); font-size: 1.15rem; font-style: italic; line-height: 1.6; color: var(--color-text); text-align: center;">
+                                Certificates will be provided + exciting prizes!
+                            </p>
+                            <p style="font-size: 0.95rem; color: var(--color-text-muted); margin-top: 1rem; line-height: 1.6; text-align: center;">
+                                Specific prize details and categories will be announced soon.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -352,89 +348,44 @@
             </div>
         </section>
 
-        <!-- TEAM BUILDER & REGISTRATION PLANNER -->
-        <section id="planner" class="planner-section container">
-            <div class="planner-wrapper">
-                <div class="planner-header">
-                    <h2>TEAM REGISTRATION PLANNER</h2>
-                    <p>Draft your team structure, validate compliance, and generate a formatted registration ticket to prepare for registration.</p>
+        <!-- SPONSORSHIP OPPORTUNITIES -->
+        <section id="sponsorship" class="sponsorship-section container">
+            <div class="sponsorship-wrapper">
+                <div class="sponsorship-header">
+                    <span class="sponsorship-ornament">✦ ✦ ✦</span>
+                    <h2 class="sponsorship-title">SPONSORSHIP OPPORTUNITIES</h2>
+                    <p class="sponsorship-subtitle">Partner with FOSS CLUB PU to support UNBOUND '26 and empower the student developer community</p>
+                    <div class="sponsorship-divider"></div>
                 </div>
                 
-                <form id="registration-planner-form" onsubmit="return false;">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="team-name">Team Name <span class="required">*</span></label>
-                            <input type="text" id="team-name" placeholder="e.g., The Antigravity Coders" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="project-license">Target Open Source License <span class="required">*</span></label>
-                            <select id="project-license" required>
-                                <option value="" disabled selected>Select an OSI-approved license</option>
-                                <option value="MIT">MIT License</option>
-                                <option value="Apache-2.0">Apache License 2.0</option>
-                                <option value="GPL-3.0">GNU GPL v3</option>
-                                <option value="BSD-3-Clause">BSD 3-Clause "New" or "Revised" License</option>
-                                <option value="AGPL-3.0">GNU Affero GPL v3</option>
-                                <option value="MPL-2.0">Mozilla Public License 2.0</option>
-                            </select>
+                <div class="sponsorship-content-grid">
+                    <div class="sponsorship-benefit">
+                        <span class="benefit-bullet">✦</span>
+                        <div class="benefit-text">
+                            <h4>Support Open Innovation</h4>
+                            <p>Enable student developers to build high-impact, open-source software free from proprietary vendor lock-in.</p>
                         </div>
                     </div>
-
-                    <div class="form-group">
-                        <label for="project-description">Project Concept Idea (Optional)</label>
-                        <textarea id="project-description" rows="3" placeholder="Briefly describe what problem you plan to address..."></textarea>
-                    </div>
-
-                    <div class="members-section">
-                        <h3>Team Members (1 to 4 Members)</h3>
-                        <p class="form-tip">The first member is designated as the Team Leader. All fields are required for added members.</p>
-                        
-                        <div id="members-container">
-                            <!-- Member 1 (Leader) -->
-                            <div class="member-entry" data-member-index="1">
-                                <div class="member-header">
-                                    <span class="member-number">#1: Team Leader</span>
-                                </div>
-                                <div class="member-fields">
-                                    <div class="field-item">
-                                        <input type="text" class="m-name" placeholder="Full Name" required>
-                                    </div>
-                                    <div class="field-item">
-                                        <input type="email" class="m-email" placeholder="Email Address" required>
-                                    </div>
-                                    <div class="field-item">
-                                        <input type="text" class="m-college" placeholder="College / Institution" required>
-                                    </div>
-                                    <div class="field-item">
-                                        <input type="text" class="m-github" placeholder="GitHub Username (e.g., octocat)" required>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="members-buttons">
-                            <button type="button" id="add-member-btn" class="btn btn-small btn-outline">+ Add Team Member</button>
+                    <div class="sponsorship-benefit">
+                        <span class="benefit-bullet">✦</span>
+                        <div class="benefit-text">
+                            <h4>Connect with Top Talent</h4>
+                            <p>Get direct exposure to passionate and skilled programmers, designers, and builders across diverse institutions.</p>
                         </div>
                     </div>
+                    <div class="sponsorship-benefit">
+                        <span class="benefit-bullet">✦</span>
+                        <div class="benefit-text">
+                            <h4>Prominent Placement</h4>
+                            <p>Feature your organization's logo and mission on our event portal, certificates, publications, and future club events.</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <div class="planner-actions">
-                        <button type="submit" id="generate-ticket-btn" class="btn btn-primary">Generate Registration Ticket</button>
-                        <button type="button" id="reset-planner-btn" class="btn btn-secondary">Reset Form</button>
-                    </div>
-                </form>
-
-                <!-- Ticket Output Display -->
-                <div class="ticket-output-container hidden" id="ticket-output-container">
-                    <div class="ticket-header-symmetrical">
-                        <span>UNBOUND '26 OFFICIAL PLANNER REGISTRATION TICKET</span>
-                    </div>
-                    <div class="ticket-body" id="ticket-body">
-                        <!-- Dynamic ticket output goes here -->
-                    </div>
-                    <div class="ticket-actions">
-                        <button type="button" id="copy-markdown-btn" class="btn btn-primary">Copy Ticket Markdown</button>
-                        <button type="button" id="download-ticket-btn" class="btn btn-secondary">Download Ticket Text</button>
-                    </div>
+                <div class="sponsorship-cta-block">
+                    <p class="sponsorship-cta-text">Interested in supporting the first edition online hackathon?</p>
+                    <a href="mailto:fossclubpu@protonmail.com" class="btn btn-primary sponsorship-btn">Partner With Us</a>
+                    <span class="sponsorship-email-display">fossclubpu@protonmail.com</span>
                 </div>
             </div>
         </section>
@@ -477,7 +428,7 @@
                         <div class="panel-content">
                             <p>FOSS Club Pondicherry University stands for inclusivity, collaboration, and ethical engineering:</p>
                             <ul>
-                                <li><strong>Respect & Inclusivity:</strong> All interactions on the official Discord server must remain professional, helpful, and friendly. Harassment, derogatory remarks, or hate speech will trigger immediate expulsion from the competition.</li>
+                                <li><strong>Respect & Inclusivity:</strong> All interactions on official communication channels must remain professional, helpful, and friendly. Harassment, derogatory remarks, or hate speech will trigger immediate expulsion from the competition.</li>
                                 <li><strong>Academic Integrity:</strong> Plagiarism will result in an immediate, unappealing ban from all future FOSS Club PU hackathons. Do not copy repositories without attribution.</li>
                                 <li><strong>Absolute Authority:</strong> The decisions made by the FOSS CLUB PU organizing committee and the external judging panel regarding evaluations, compliance audits, disqualifications, and final placements are absolute and final.</li>
                             </ul>
@@ -500,6 +451,7 @@
                                 <li><strong>What counts as a "Proprietary Dependency"?</strong> For example, using paid APIs (like OpenAI paid tiers without a local fallback, Google Maps paid SDKs) as a core function without open alternatives. Try to use open models (Hugging Face, self-hosted LLMs) or open-source database libraries (SQLite, PostgreSQL).</li>
                                 <li><strong>Are we allowed to use frameworks?</strong> Absolutely. You can use React, Vue, Next.js, Django, Flutter, Rust, etc., as long as your code is open-sourced under an OSI license and written during the hackathon window.</li>
                             </ul>
+                            <p style="margin-top: 1rem; font-family: var(--font-serif); font-style: italic; color: var(--color-text-muted);">For further queries and support, join our official <a href="https://chat.whatsapp.com/CeEHgY0659aD6e5H1TmtMr?mode=gi_t" target="_blank" style="text-decoration: underline; color: var(--color-accent);">WhatsApp Group</a>.</p>
                         </div>
                     </div>
                 </div>
@@ -513,12 +465,13 @@
                 <div class="footer-brand">
                     <h3>UNBOUND '26</h3>
                     <p>Presented by FOSS CLUB PU</p>
+                    <p class="footer-sponsorship">
+                        For sponsorship opportunities: <a href="mailto:fossclubpu@protonmail.com">fossclubpu@protonmail.com</a>
+                    </p>
                 </div>
                 <div class="footer-socials">
-                    <a href="#" class="social-link">Discord</a>
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="mailto:fossclubpu@gmail.com" class="social-link">Email</a>
+                    <a href="mailto:fossclubpu@protonmail.com" class="social-link">Email</a>
+                    <a href="https://chat.whatsapp.com/CeEHgY0659aD6e5H1TmtMr?mode=gi_t" target="_blank" class="social-link">WhatsApp Queries</a>
                 </div>
             </div>
             
@@ -526,12 +479,12 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2026 FOSS CLUB PU. Pondicherry University. Built in the spirit of Free and Open Source Software.</p>
-                <p class="footer-license">This website is open-source and licensed under the MIT License.</p>
+                <p class="footer-license">This website is open-source and licensed under the <a href="https://github.com/VishnupiriyanV/unbound-hackathon-website" target="_blank" style="text-decoration: underline; color: var(--color-accent);">MIT License</a>.</p>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript script file -->
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
