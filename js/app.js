@@ -197,6 +197,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Trigger initial progress bar render
     handleChecklistChange();
 
-
-
 });
+
+// -------------------------------------------------------------
+// 4. CERTIFICATE LIGHTBOX MODAL HANDLER
+// -------------------------------------------------------------
+function openCertificateModal(imgSrc, caption) {
+    const modal = document.getElementById('certificate-modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalCaption = document.getElementById('modal-caption');
+
+    if (modal && modalImg) {
+        modalImg.src = imgSrc;
+        if (modalCaption) modalCaption.textContent = caption || '';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeCertificateModal(e) {
+    if (e) e.stopPropagation();
+    const modal = document.getElementById('certificate-modal');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        closeCertificateModal();
+    }
+});
+

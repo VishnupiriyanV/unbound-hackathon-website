@@ -57,6 +57,8 @@
                 </div>
             </div>
             <nav class="nav">
+                <a href="#results" class="nav-link" style="color: var(--color-accent); font-weight: 700;">Results</a>
+                <a href="#metrics" class="nav-link">Impact</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#details" class="nav-link">Details</a>
                 <a href="#rules" class="nav-link">Statutes</a>
@@ -66,7 +68,7 @@
             </nav>
             <div class="header-cta">
                 <button id="theme-toggle" class="btn-theme-toggle" aria-label="Toggle Theme" title="Toggle Light/Dark Theme">☾</button>
-                <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="btn btn-outline">Apply Now</a>
+                <a href="#results" class="btn btn-outline">View Results</a>
             </div>
         </div>
     </header>
@@ -74,30 +76,31 @@
     <main>
         <!-- HERO SECTION -->
         <section class="hero-section container">
+            <div class="concluded-badge">✦ HACKATHON CONCLUDED ✦</div>
             <div class="hero-eyebrow">
                 <span>PRESENTED BY FOSS CLUB PONDICHERRY UNIVERSITY</span>
-                <div class="hero-eyebrow-sub">Department of computer science , Pondicherry University</div>
+                <div class="hero-eyebrow-sub">Department of Computer Science, Pondicherry University</div>
             </div>
             <h1 class="hero-title">UNBOUND '26</h1>
-            <p class="hero-subtitle">First Edition Online Hackathon</p>
+            <p class="hero-subtitle">First Edition Online Hackathon — Concluded</p>
             
             <div class="hero-divider">
                 <span class="divider-ornament">✦</span>
             </div>
 
             <p class="hero-description">
-                A two-week digital sanctuary for developers, designers, and open-source visionaries. 
-                Break free from constraints, build with integrity, and shape the future under the banner of <strong>Open Innovation</strong>.
+                UNBOUND '26 has officially wrapped up! Thank you to hundreds of developers, designers, and open-source visionaries across India who broke free from constraints to build high-impact open-source software under the banner of <strong>Open Innovation</strong>.
             </p>
 
             <div class="hero-buttons">
-                <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="btn btn-primary">Apply Now</a>
-                <a href="#rules" class="btn btn-secondary">Read Statutes</a>
+                <a href="#results" class="btn btn-primary">View Winners & Results</a>
+                <a href="#metrics" class="btn btn-secondary">Impact & Reach</a>
+                <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="btn btn-outline">Unstop Page ➔</a>
             </div>
 
-            <!-- COUNTDOWN CLOCK -->
+            <!-- COUNTDOWN CLOCK / CONCLUDED CLOCK -->
             <div class="countdown-wrapper">
-                <h3 class="countdown-title">COUNTDOWN TO KICKOFF</h3>
+                <h3 class="countdown-title">HACKATHON CONCLUDED</h3>
                 <div class="countdown-clock" id="countdown-clock">
                     <div class="countdown-item">
                         <span class="countdown-number" id="days">00</span>
@@ -119,16 +122,109 @@
                         <span class="countdown-label">SECONDS</span>
                     </div>
                 </div>
-                <p class="countdown-date">KICKOFF DATE: JUNE 12, 2026</p>
+                <p class="countdown-date">SUBMISSIONS & EVALUATION CLOSED ON JUNE 26, 2026</p>
             </div>
 
             <!-- WHATSAPP HIGHLIGHT -->
             <div class="whatsapp-banner">
                 <span class="whatsapp-banner-title">COMMUNICATION</span>
                 <p class="whatsapp-banner-text">
-                    For real-time announcements & query resolution, join the official 
+                    For post-event announcements & winner connections, join the official 
                     <a href="https://chat.whatsapp.com/CeEHgY0659aD6e5H1TmtMr?mode=gi_t" target="_blank" class="whatsapp-banner-link">UNBOUND '26 WhatsApp Group ➔</a>
                 </p>
+            </div>
+        </section>
+
+        <!-- OFFICIAL RESULTS & WINNERS SECTION -->
+        <section id="results" class="results-section container">
+            <div class="section-header-block text-center">
+                <div class="concluded-badge-wrapper">
+                    <div class="concluded-badge">✦ CHAMPIONS OF OPEN INNOVATION ✦</div>
+                </div>
+                <h2 class="section-title">OFFICIAL RESULTS</h2>
+                <p class="section-subtitle">Celebrating the winning teams and outstanding open-source innovations of UNBOUND '26</p>
+            </div>
+
+            <div class="winners-grid">
+                <!-- WINNER CARD 1: TEAM WIDGET -->
+                <div class="winner-card first-place">
+                    <div class="winner-badge-ribbon">WINNER</div>
+                    <div class="winner-certificate-preview" onclick="openCertificateModal('results/1.png', 'Winner - Team Widget | UNBOUND \'26')">
+                        <img src="results/1.png" alt="Winner Certificate - Team Widget" loading="lazy">
+                        <div class="winner-certificate-overlay">
+                            <p>Click to View</p>
+                        </div>
+                    </div>
+                    <div class="winner-info">
+                        <h4 class="winner-award-title">1ST PLACE WINNER</h4>
+                        <h3 class="winner-team-name">TEAM WIDGET</h3>
+                        <p class="winner-description">
+                            Awarded overall 1st Place for exceptional software architecture, impressive code quality, complete FOSS compliance, and real-world impact.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WINNER CARD 2: TEAM SYNAPTIX -->
+                <div class="winner-card">
+                    <div class="winner-badge-ribbon">MOST CONSISTENT</div>
+                    <div class="winner-certificate-preview" onclick="openCertificateModal('results/2.png', 'Most Consistent - Team Synaptix | UNBOUND \'26')">
+                        <img src="results/2.png" alt="Most Consistent Certificate - Team Synaptix" loading="lazy">
+                        <div class="winner-certificate-overlay">
+                            <p>Click to View</p>
+                        </div>
+                    </div>
+                    <div class="winner-info">
+                        <h4 class="winner-award-title">MOST CONSISTENT</h4>
+                        <h3 class="winner-team-name">TEAM SYNAPTIX</h3>
+                        <p class="winner-description">
+                            Recognized for exemplary Git commit progression, continuous development discipline throughout the 2-week window, and collaborative excellence.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WINNER CARD 3: TEAM LKS -->
+                <div class="winner-card">
+                    <div class="winner-badge-ribbon">MOST CREATIVE</div>
+                    <div class="winner-certificate-preview" onclick="openCertificateModal('results/3.png', 'Most Creative - Team LKS | UNBOUND \'26')">
+                        <img src="results/3.png" alt="Most Creative Certificate - Team LKS" loading="lazy">
+                        <div class="winner-certificate-overlay">
+                            <p>Click to View</p>
+                        </div>
+                    </div>
+                    <div class="winner-info">
+                        <h4 class="winner-award-title">MOST CREATIVE</h4>
+                        <h3 class="winner-team-name">TEAM LKS</h3>
+                        <p class="winner-description">
+                            Honored for outstanding innovation, inventive problem solving, unique open-source solution design, and creative vision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT & METRICS SECTION -->
+        <section id="metrics" class="metrics-section container">
+            <div class="section-header-block text-center">
+                <h2 class="section-title">EVENT IMPACT & REACH</h2>
+                <p class="section-subtitle">UNBOUND '26 achieved unprecedented participation across the nation</p>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-number">507</div>
+                    <div class="metric-label">Total Registrations</div>
+                    <div class="metric-desc">Student developers and open-source enthusiasts registered</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">23,622</div>
+                    <div class="metric-label">Total Impressions</div>
+                    <div class="metric-desc">Views and engagements across social media & event portals</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">20+</div>
+                    <div class="metric-label">States in India</div>
+                    <div class="metric-desc">Widespread nationwide representation from diverse institutions</div>
+                </div>
             </div>
         </section>
 
@@ -488,6 +584,7 @@
                     </p>
                 </div>
                 <div class="footer-socials">
+                    <a href="https://unstop.com/o/ho83vxR?lb=use046tn&utm_medium=Share&utm_source=atleyzjm66175&utm_campaign=Online_coding_challenge" target="_blank" class="social-link">Unstop Listing</a>
                     <a href="https://www.linkedin.com/company/foss-club-pondicherry-university" target="_blank" class="social-link">LinkedIn</a>
                     <a href="mailto:fossclubpu@protonmail.com" class="social-link">Email</a>
                     <a href="https://chat.whatsapp.com/CeEHgY0659aD6e5H1TmtMr?mode=gi_t" target="_blank" class="social-link">WhatsApp Queries</a>
@@ -503,7 +600,17 @@
         </div>
     </footer>
 
+    <!-- CERTIFICATE LIGHTBOX MODAL -->
+    <div id="certificate-modal" class="certificate-modal" onclick="closeCertificateModal(event)">
+        <div class="modal-container" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeCertificateModal(event)" aria-label="Close modal">&times;</button>
+            <img id="modal-img" class="modal-image" src="" alt="Certificate View">
+            <div id="modal-caption" class="modal-caption"></div>
+        </div>
+    </div>
+
     <!-- JavaScript script file -->
     <script src="js/app.js"></script>
 </body>
 </html>
+
